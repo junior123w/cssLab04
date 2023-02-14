@@ -1,0 +1,55 @@
+/* 1., 2. Pseudo Class Selector & Combinator */
+main ul li:nth-of-type(odd) {
+    font-weight: bold;
+
+}
+
+/*for background image */
+body {
+    background-image: url('https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*To make the image(from lab 1) responsive and applying filter to make the image more contrast using filters*/
+img {
+    filter: contrast(200%);
+    filter: saturate(56px);
+    filter: brightness(100em);
+    max-width: 100%;
+    max-height: auto;
+}
+/*applyng responsiveness to background image*/
+
+@media(max-width:fullscreen) {
+    img {
+        max-height: auto;
+        max-width: 100%;
+    }
+}
+
+/* 3. Class Selector  */
+div.wrapper {
+    width: 80vw;
+    background-color: blue;
+    border: 1px solid #000;
+    margin: 0 auto;
+    color: yellow;
+}
+
+/* 4. Element Selector  */
+h1 {
+    font-size: 24px;
+}
+
+.about-me {
+    color: initial;
+}
+
+/* remember to keep spacing consistent & follow formatting guidelines */
+/* ie. add an empty line between style rules and leave a space between section and {*/
+
+section {
+    margin: 15px;
+}
+/*Got the image from pexels.com*/
